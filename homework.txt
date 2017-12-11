@@ -5,7 +5,7 @@ względem czasu działania i cache missów: front, push, pop. Który backend dla
 std::queue warto wybrać i kiedy?
 
 Możesz rozważyć użycie mini-scenariuszy zamiast testowania pojedynczego wywołania
-konkretnej metody. Przykładowe scenariusze (zakładające istnieje niepustej kolejki):
+konkretnej metody. Przykładowe scenariusze (zakładające istnienie niepustej kolejki):
 - kilka razy na zmianę wywołujemy front i pop,
 - klika razy z rzędu wywołujemy push.
 
