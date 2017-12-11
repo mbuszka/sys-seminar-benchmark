@@ -1,0 +1,11 @@
+# some info
+sudo perf stat -B -e cache-references,cache-misses,task-clock,context-switches,cpu-migrations,page-faults,minor-faults,major-faults,cycles,instructions,branches,branch-misses,icache_16b.ifdata_stall,resource_stalls.any -a sleep 5
+
+# scheduler
+sudo perf stat -e 'sched:*' -a sleep 5
+
+# L1
+perf stat -e L1-dcache-loads,L1-dcache-load-misses,L1-dcache-stores -a sleep 5
+
+# last level cache
+perf stat -e LLC-loads,LLC-load-misses,LLC-stores,LLC-store-misses -a sleep 5

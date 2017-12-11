@@ -1,0 +1,3 @@
+I used some examples from CppCon 2015: Chandler Carruth "Tuning C++:
+Benchmarks, and CPUs, and Compilers! Oh My!", https://www.youtube.com/watch?v=nXaxk27zwlk
+and Google Benchmark site: https://github.com/google/benchmark

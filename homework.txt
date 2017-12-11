@@ -1,0 +1,19 @@
+Domyślnie w C++ std::queue zaimplementowane jest jako nakładka na std::deque,
+jednak podczas tworzenia kolejki można wybrać, by była ona oparta na std::list.
+Porównaj oba te warianty, badając następujące metody klasy std::queue pod
+względem czasu działania i cache missów: front, push, pop. Który backend dla
+std::queue warto wybrać i kiedy?
+
+Możesz rozważyć użycie mini-scenariuszy zamiast testowania pojedynczego wywołania
+konkretnej metody. Przykładowe scenariusze (zakładające istnieje niepustej kolejki):
+- kilka razy na zmianę wywołujemy front i pop,
+- klika razy z rzędu wywołujemy push.
+
+Narzędzia, których trzeba użyć: Google Benchmark, perf.
+Nie zapomnij dostarczyć kodów źródłowych i poleceń, którymi badałeś wydajność.
+
+Więcej informacji:
+http://en.cppreference.com/w/cpp/container/queue
+https://github.com/google/benchmark
+http://www.brendangregg.com/perf.html
+https://www.youtube.com/watch?v=nXaxk27zwlk
