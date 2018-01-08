@@ -1,0 +1,4 @@
+#! /bin/bash
+
+sudo perf record -e cache-misses --call-graph=dwarf -o deque.perf ./p-deque
+sudo perf record -e cache-misses --call-graph=dwarf -o list.perf ./p-list
